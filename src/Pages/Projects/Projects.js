@@ -65,31 +65,24 @@ export const Projects = () => {
       ],
     },
   ];
-  const lambdaList = [
-    {
-      name: "Lambda Name",
-      size: "18mb",
-      runTime: "23",
-      functions: [
-        {
-          id: "1",
-          type: "lambda",
-          name: "function 1",
-          codeSize: "1",
-          runtime: "1",
-          identification: "a",
-        },
-        {
-          id: "2",
-          type: "lambda",
-          name: "function 1",
-          codeSize: "1",
-          runtime: "1",
-          identification: "a",
-        },
-      ],
-    },
-  ];
+  const lambdaList = {
+    functions: [
+      {
+        identification: "1",
+        type: "lambda",
+        name: "function 1",
+        codeSize: "1",
+        runtime: "1",
+      },
+      {
+        identification: "2",
+        type: "lambda",
+        name: "function 1",
+        codeSize: "1",
+        runtime: "1",
+      },
+    ],
+  };
   const [show, setShow] = useState(false);
   const open = { show, setShow };
 

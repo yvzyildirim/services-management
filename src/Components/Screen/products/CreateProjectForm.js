@@ -30,7 +30,7 @@ export const CreateProjectModal = ({ lambdaList }) => {
   function handleAdd(e) {
     e.preventDefault();
     const id = e.target.dataset.id;
-
+    console.log(id);
     setSelectedFunction([...selectedFunction, id]);
   }
 
@@ -65,6 +65,7 @@ export const CreateProjectModal = ({ lambdaList }) => {
     }
   }
 
+  console.log(lambdaList);
   return (
     <div className="w-full flex justify-between items-stretch">
       <div className="w-6/12 bg-primary  ">
@@ -131,6 +132,7 @@ export const CreateProjectModal = ({ lambdaList }) => {
                       </div>
                     </div>
                     <button
+                      id={i.identification}
                       onClick={handleAdd}
                       data-id={i.identification}
                       className="text-green-700 mr-2"
