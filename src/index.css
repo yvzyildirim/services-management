@@ -1,0 +1,6 @@
+@import "Assets/theme.scss";
+@import "Assets/custom.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
